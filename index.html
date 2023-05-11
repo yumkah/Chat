@@ -1,0 +1,58 @@
+<script type='text/javascript' src='https://banlist.vercel.app/list.js'></script>
+<meta name="keywords" content="DM chat,unblocked,free,chat,school,work,hangout"/>
+<script>
+  function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
+  if (name==undefined){
+	  window.location.pathname=window.location.pathname+"/changeusername.html";
+  }
+	var list=get_cookie("list");
+	var titles=get_cookie("titles");
+  function yes(){
+	if (window.location.href.includes("file:///")){
+		window.location.pathname=window.location.pathname.replace("index.html","")+"changeusername.html";
+	}
+	else{
+  		window.location.pathname=window.location.pathname.replace("/index.html","")+"changeusername.html";
+	}
+  }
+  function no(){
+	if (window.location.href.includes("file:///")){
+		window.location.pathname=window.location.pathname.replace("index.html","")+"titles.html";
+	}
+	else{
+		window.location.pathname=window.location.pathname.replace("/index.html","")+"titles.html";
+	}
+  }
+</script>
+<link rel="icon" href="image_6483441-removebg-preview.png">
+<title>DM chat</title>
+<h1 id="text" align="top" style="text-align:center; top:150px;">do you want to change your username?</h1>
+<style>
+	.button-yes {
+	  text-align: left;
+	  opacity: 0.5;	
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	}
+	.button-yes:hover {
+	  opacity: 1;	
+	}
+	.button-no {
+	  text-align: right;
+	  opacity: 0.5;	
+	  position: absolute;
+	  top: 50%;
+	  right: 50%;
+
+	}
+	.button-no:hover {
+	  opacity: 1;	
+	}
+</style>
+<div class="button-yes">
+  <img src="up-removebg-preview.png" id="yes" onclick="yes();"/>
+</div>
+<div class="button-no">
+  <img src="download-removebg-preview.png" id="no" onclick="no();"/>
+</div>
